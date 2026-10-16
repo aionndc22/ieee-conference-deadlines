@@ -385,6 +385,8 @@ footer p { margin: 6px 0; }
   td[data-label="Conference"] { display: block; font-size: 1.05rem; padding-top: 8px; }
   td[data-label="Conference"]::before { content: none; }
   .filters input[type=search] { min-width: 0; flex: 1 1 100%; }
+  .filters label { max-width: 100%; }
+  .filters select { min-width: 0; max-width: 100%; flex: 1 1 auto; }
 }
 </style>
 </head>
@@ -396,7 +398,7 @@ footer p { margin: 6px 0; }
 <p>Community-maintained on <a href="https://github.com/aionndc22/ieee-conference-deadlines">GitHub</a> — <a href="https://github.com/aionndc22/ieee-conference-deadlines/blob/main/CONTRIBUTING.md">add or fix a conference</a>.
 Last updated <time datetime="2026-10-16">16 Oct 2026</time>. Always confirm dates on the official site.</p>
 </header>
-<nav class="pages" aria-label="Pages"><a href="../">All</a> <a href="../bangladesh/">Bangladesh</a> <a href="../india/" aria-current="page">India</a> <a href="../usa/">USA</a> <a href="../aess/">AESS</a></nav>
+<nav class="pages" aria-label="Pages"><a href="../">All</a> <a href="../bangladesh/">Bangladesh</a> <a href="../india/" aria-current="page">India</a> <a href="../usa/">USA</a> <a href="../aess/">AESS</a> <a href="../journals/">Journals</a></nav>
 <div class="stats">
 <div class="stat"><b id="n-open">8</b> open calls</div>
 <div class="stat"><b id="n-tba">1</b> not announced</div>
@@ -554,6 +556,7 @@ Last updated <time datetime="2026-10-16">16 Oct 2026</time>. Always confirm date
 </div>
 <footer>
 <p><b>AESS</b> = IEEE Aerospace and Electronic Systems Society event. <b>†</b> = run by a college or private organizer; papers go to IEEE Xplore only if IEEE approves.</p>
+<p>Looking for a journal instead? See <a href="../journals/">IEEE journals — APC &amp; decision time</a>.</p>
 <p>Download the data: <a href="../conferences.json">JSON</a> · <a href="../conferences.csv">CSV</a> · <a href="https://github.com/aionndc22/ieee-conference-deadlines/blob/main/data/conferences.yml">YAML</a>. Licensed MIT. Not affiliated with IEEE.</p>
 </footer>
 </div>

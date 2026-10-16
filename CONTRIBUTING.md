@@ -93,6 +93,50 @@ python scripts/build.py           # regenerate README.md and docs/
 
 Open `docs/index.html` in a browser to see the website.
 
+## Journals
+
+The IEEE journal list — open-access model, APC and time to first decision — lives in **[`data/journals.yml`](data/journals.yml)**. It generates [`JOURNALS.md`](JOURNALS.md), the [journals web page](https://aionndc22.github.io/ieee-conference-deadlines/journals/), `docs/journals.json`, `docs/journals.csv` and the Excel file `docs/IEEE_Journals_APC.xlsx`.
+
+The most valuable contributions are:
+
+- **Official time to first decision** for a journal (many say "Not published").
+- **Confirming the open-access model** of titles marked `model_unconfirmed: true`.
+- **New journals** and title-specific APCs.
+
+### Updating IEEE's prices
+
+Prices are set once per publishing model under `pricing.models` at the top of the file (e.g. `Hybrid: apc: 2800`). When IEEE publishes new prices, change them there and bump `pricing.year` and `pricing.verified` — every journal updates automatically. If a single journal has its own price, add `apc:` to that journal only.
+
+### Example journal entry
+
+```yaml
+- acronym: TAES
+  name: IEEE Transactions on Aerospace and Electronic Systems
+  track: Aerospace, Radar & Navigation      # reuse an existing track name
+  type: Transactions                         # Transactions | Journal | Letters | Open journal | Review journal | Magazine
+  oa_model: Hybrid                           # Hybrid | Fully open access | Hybrid magazine
+  aess: true                                 # IEEE AESS journals only
+  decision_time: ~22.6 weeks first review round
+  decision_source: Crowd-sourced (SciRev)    # Official (…) | Third-party estimate | Crowd-sourced (…)
+  decision_url: https://scirev.org/journal/ieee-transactions-on-aerospace-and-electronic-systems/
+  notes: AESS flagship.
+```
+
+| Field | Required | What to put |
+|---|---|---|
+| `acronym` | ✅ | Unique short name, e.g. `TAES` |
+| `name` | ✅ | Full journal title |
+| `track` | ✅ | Research area; reuse an existing track so grouping works |
+| `type` | ✅ | `Transactions`, `Journal`, `Letters`, `Open journal`, `Review journal` or `Magazine` |
+| `oa_model` | ✅ | One of the keys under `pricing.models` |
+| `apc` | | Only if this journal's APC differs from its model's price (US$) |
+| `decision_time` | | e.g. `~12 weeks to first decision` |
+| `decision_source` | with `decision_time` | Who published it: `Official (…)`, `Third-party estimate` or `Crowd-sourced (…)` |
+| `decision_url` | | Link to the page that states the figure |
+| `aess` | | `true` for IEEE AESS journals |
+| `model_unconfirmed` | | `true` if the open-access model still needs confirming |
+| `notes`, `url` | | Anything else; journal homepage |
+
 ## Watchlist
 
 [`data/watchlist.yml`](data/watchlist.yml) lists conferences we expect but that haven't published dates yet. When one announces its call for papers, move it into `conferences.yml` with full details.

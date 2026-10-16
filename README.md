@@ -8,6 +8,8 @@
 
 **Browse:** [Bangladesh](https://aionndc22.github.io/ieee-conference-deadlines/bangladesh/) · [India](https://aionndc22.github.io/ieee-conference-deadlines/india/) · [USA](https://aionndc22.github.io/ieee-conference-deadlines/usa/) · [AESS (aerospace, radar, navigation)](https://aionndc22.github.io/ieee-conference-deadlines/aess/) · [All](https://aionndc22.github.io/ieee-conference-deadlines/)
 
+📚 **Also here:** [IEEE journals — open-access model, APC 2026 and time to first decision](JOURNALS.md) (217 journals and magazines, grouped by track · [website](https://aionndc22.github.io/ieee-conference-deadlines/journals/) · [Excel](docs/IEEE_Journals_APC.xlsx))
+
 > **27** open calls · **8** deadlines not announced · **17** closed but still upcoming — across 15 countries.
 > Last updated **16 Oct 2026**. Statuses are recalculated every day. Always confirm dates on the official site before submitting.
 

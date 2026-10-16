@@ -1,0 +1,1197 @@
+# IEEE journals — open-access model, APC and time to first decision.
+#
+# Single source of truth for JOURNALS.md, docs/journals/ (website page),
+# docs/journals.json, docs/journals.csv and docs/IEEE_Journals_APC.xlsx.
+# Edit this file and open a pull request; the rest is regenerated (see CONTRIBUTING.md).
+#
+# pricing:  IEEE's list price per publishing model. Every journal's APC comes from its
+#           oa_model unless the journal sets its own `apc` (for titles with special prices).
+#
+# journals: required  acronym, name, track, type, oa_model
+#           optional  aess: true, apc (override, US$), decision_time, decision_source,
+#                     decision_url, model_unconfirmed: true, notes, url
+#           oa_model is one of the keys under pricing.models.
+#           decision_source says who published the figure: Official / Third-party / Crowd-sourced.
+
+pricing:
+  year: 2026
+  verified: '2026-10-16'
+  models:
+    Hybrid:
+      apc: 2800
+      without_oa: Free (overlength page charges may apply)
+      meaning: Subscription journal. Publishing is free unless you choose open access; mandatory overlength page charges may apply.
+    Fully open access:
+      apc: 2160
+      without_oa: Not available — OA only
+      meaning: 'Gold open access: every accepted article pays the APC. Standard rate for most fully OA titles; a few titles differ.'
+    Hybrid magazine:
+      apc: 2995
+      without_oa: Free (most articles are invited)
+      meaning: Magazine with an optional open-access fee (most magazines).
+  discounts:
+    ieee_member: 0.05
+    society_member: 0.2
+  sources:
+  - https://open.ieee.org/for-authors/article-processing-charges/
+  - https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/2026-07-30-IEEE-Article-Processing-Charges-List.pdf
+  - https://ieee-aess.org/apc-open-access
+  - https://open.ieee.org/for-authors/ieee-low-and-lower-middle-income-country-open-access-discount-program/
+
+journals:
+- acronym: TAES
+  name: IEEE Transactions on Aerospace and Electronic Systems
+  track: Aerospace, Radar & Navigation
+  type: Transactions
+  oa_model: Hybrid
+  aess: true
+  notes: AESS flagship. APC US$2,800 confirmed by AESS for 2026.
+  decision_time: ~22.6 weeks first review round
+  decision_source: Crowd-sourced (SciRev)
+  decision_url: https://scirev.org/journal/ieee-transactions-on-aerospace-and-electronic-systems/
+- acronym: T-RS
+  name: IEEE Transactions on Radar Systems
+  track: Aerospace, Radar & Navigation
+  type: Transactions
+  oa_model: Hybrid
+  aess: true
+  model_unconfirmed: true
+- acronym: J-MASS
+  name: IEEE Journal on Miniaturization for Air and Space Systems
+  track: Aerospace, Radar & Navigation
+  type: Journal
+  oa_model: Hybrid
+  aess: true
+  model_unconfirmed: true
+- acronym: J-ISPIN
+  name: IEEE Journal of Indoor and Seamless Positioning and Navigation
+  track: Aerospace, Radar & Navigation
+  type: Journal
+  oa_model: Fully open access
+  notes: Gold OA (IEEE Sensors Council, SPS, IMS).
+- acronym: JRFID
+  name: IEEE Journal of Radio Frequency Identification
+  track: Aerospace, Radar & Navigation
+  type: Journal
+  oa_model: Hybrid
+  model_unconfirmed: true
+- acronym: JSAC
+  name: IEEE Journal on Selected Areas in Communications
+  track: Communications & Networking
+  type: Journal
+  oa_model: Hybrid
+  notes: Special-issue driven.
+  decision_time: 4–8 months to first decision
+  decision_source: Third-party estimate
+  decision_url: https://manusights.com/blog/average-review-times-100-journals-2026
+- acronym: TCOM
+  name: IEEE Transactions on Communications
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: 3–5 months to first decision
+  decision_source: Third-party estimate
+  decision_url: https://manusights.com/blog/average-review-times-100-journals-2026
+- acronym: TWC
+  name: IEEE Transactions on Wireless Communications
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: 3–5 months to first decision (sources conflict)
+  decision_source: Third-party estimate
+  decision_url: https://manusights.com/blog/ieee-transactions-on-wireless-communications-submission-guide
+- acronym: COMML
+  name: IEEE Communications Letters
+  track: Communications & Networking
+  type: Letters
+  oa_model: Hybrid
+- acronym: WCL
+  name: IEEE Wireless Communications Letters
+  track: Communications & Networking
+  type: Letters
+  oa_model: Hybrid
+- acronym: COMST
+  name: IEEE Communications Surveys & Tutorials
+  track: Communications & Networking
+  type: Journal
+  oa_model: Hybrid
+  notes: Surveys/tutorials only.
+- acronym: ToN
+  name: IEEE Transactions on Networking (formerly IEEE/ACM ToN)
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: ~5 months (editor assignment to first decision)
+  decision_source: Official (IEEE ComSoc)
+  decision_url: https://www.comsoc.org/publications/journals/ieee-tnet/policies-guidelines
+- acronym: TNSM
+  name: IEEE Transactions on Network and Service Management
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCCN
+  name: IEEE Transactions on Cognitive Communications and Networking
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TGCN
+  name: IEEE Transactions on Green Communications and Networking
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TMC
+  name: IEEE Transactions on Mobile Computing
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: IoT-J
+  name: IEEE Internet of Things Journal
+  track: Communications & Networking
+  type: Journal
+  oa_model: Hybrid
+  decision_time: ~6.9 weeks to first decision
+  decision_source: Third-party estimate
+  decision_url: https://manusights.com/blog/ieee-internet-of-things-journal-submission-guide
+- acronym: TNSE
+  name: IEEE Transactions on Network Science and Engineering
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TMBMC
+  name: IEEE Transactions on Molecular, Biological, and Multi-Scale Communications
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TMLCN
+  name: IEEE Transactions on Machine Learning in Communications and Networking
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Fully open access
+  model_unconfirmed: true
+- acronym: LNET
+  name: IEEE Networking Letters
+  track: Communications & Networking
+  type: Letters
+  oa_model: Hybrid
+- acronym: TBC
+  name: IEEE Transactions on Broadcasting
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TIT
+  name: IEEE Transactions on Information Theory
+  track: Communications & Networking
+  type: Transactions
+  oa_model: Hybrid
+- acronym: JSAIT
+  name: IEEE Journal on Selected Areas in Information Theory
+  track: Communications & Networking
+  type: Journal
+  oa_model: Hybrid
+  model_unconfirmed: true
+- acronym: OJ-COMS
+  name: IEEE Open Journal of the Communications Society
+  track: Communications & Networking
+  type: Open journal
+  oa_model: Fully open access
+  notes: APC US$2,160 confirmed by ComSoc for 2026.
+  decision_time: ~3.2 weeks to first decision (2021 figure)
+  decision_source: Official (IEEE notice, 2021)
+  decision_url: https://ieeexplore.ieee.org/document/9689920/
+- acronym: TSP
+  name: IEEE Transactions on Signal Processing
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: 3–5 months to first decision
+  decision_source: Third-party estimate
+  decision_url: https://manusights.com/blog/ieee-transactions-on-signal-processing-submission-process
+- acronym: SPL
+  name: IEEE Signal Processing Letters
+  track: Signal, Image & Speech Processing
+  type: Letters
+  oa_model: Hybrid
+  decision_time: ~1.3 months first review round
+  decision_source: Crowd-sourced (SciRev)
+  decision_url: https://scirev.org/journal/ieee-signal-processing-letters/
+- acronym: JSTSP
+  name: IEEE Journal of Selected Topics in Signal Processing
+  track: Signal, Image & Speech Processing
+  type: Journal
+  oa_model: Hybrid
+  notes: Special-issue driven.
+  decision_time: 4–8 months (varies by special issue)
+  decision_source: Third-party estimate
+  decision_url: https://manusights.com/blog/average-review-times-100-journals-2026
+- acronym: TIP
+  name: IEEE Transactions on Image Processing
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TASLP
+  name: IEEE/ACM Transactions on Audio, Speech, and Language Processing
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TIFS
+  name: IEEE Transactions on Information Forensics and Security
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TMM
+  name: IEEE Transactions on Multimedia
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCI
+  name: IEEE Transactions on Computational Imaging
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSIPN
+  name: IEEE Transactions on Signal and Information Processing over Networks
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCSVT
+  name: IEEE Transactions on Circuits and Systems for Video Technology
+  track: Signal, Image & Speech Processing
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJSP
+  name: IEEE Open Journal of Signal Processing
+  track: Signal, Image & Speech Processing
+  type: Open journal
+  oa_model: Fully open access
+  notes: APC US$2,160 (2026); no overlength charges; US$1,500 for the conference section with a promo code.
+  decision_time: Target 15 weeks to accept/reject (regular papers)
+  decision_source: Official target (IEEE SPS)
+  decision_url: https://signalprocessingsociety.org/publications-resources/ieee-open-journal-signal-processing/information-authors-ojsp
+- acronym: TPAMI
+  name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TNNLS
+  name: IEEE Transactions on Neural Networks and Learning Systems
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TAI
+  name: IEEE Transactions on Artificial Intelligence
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: ~12 weeks to first decision
+  decision_source: Official (IEEE CIS)
+  decision_url: https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence/review-process
+- acronym: TCYB
+  name: IEEE Transactions on Cybernetics
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TFS
+  name: IEEE Transactions on Fuzzy Systems
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TEVC
+  name: IEEE Transactions on Evolutionary Computation
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TETCI
+  name: IEEE Transactions on Emerging Topics in Computational Intelligence
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCDS
+  name: IEEE Transactions on Cognitive and Developmental Systems
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: ToG
+  name: IEEE Transactions on Games
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TC
+  name: IEEE Transactions on Computers
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSE
+  name: IEEE Transactions on Software Engineering
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TKDE
+  name: IEEE Transactions on Knowledge and Data Engineering
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TPDS
+  name: IEEE Transactions on Parallel and Distributed Systems
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TDSC
+  name: IEEE Transactions on Dependable and Secure Computing
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TVCG
+  name: IEEE Transactions on Visualization and Computer Graphics
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCC
+  name: IEEE Transactions on Cloud Computing
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TBD
+  name: IEEE Transactions on Big Data
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSC
+  name: IEEE Transactions on Services Computing
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TAFFC
+  name: IEEE Transactions on Affective Computing
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TLT
+  name: IEEE Transactions on Learning Technologies
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TETC
+  name: IEEE Transactions on Emerging Topics in Computing
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSUSC
+  name: IEEE Transactions on Sustainable Computing
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: ToH
+  name: IEEE Transactions on Haptics
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: THMS
+  name: IEEE Transactions on Human-Machine Systems
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSMC
+  name: 'IEEE Transactions on Systems, Man, and Cybernetics: Systems'
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCSS
+  name: IEEE Transactions on Computational Social Systems
+  track: AI, Computing & Software
+  type: Transactions
+  oa_model: Hybrid
+- acronym: CAL
+  name: IEEE Computer Architecture Letters
+  track: AI, Computing & Software
+  type: Letters
+  oa_model: Hybrid
+- acronym: LES
+  name: IEEE Embedded Systems Letters
+  track: AI, Computing & Software
+  type: Letters
+  oa_model: Hybrid
+- acronym: OJ-CS
+  name: IEEE Open Journal of the Computer Society
+  track: AI, Computing & Software
+  type: Open journal
+  oa_model: Fully open access
+- acronym: ACCESS
+  name: IEEE Access
+  track: AI, Computing & Software
+  type: Open journal
+  oa_model: Fully open access
+  notes: Multidisciplinary mega-journal. APC US$2,160 confirmed for 2026.
+  decision_time: ~4 weeks to accept/reject
+  decision_source: IEEE-stated (reported by third party)
+  decision_url: https://manusights.com/blog/ieee-access-review-time
+- acronym: TAP
+  name: IEEE Transactions on Antennas and Propagation
+  track: Antennas, Microwaves & EM
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: ~12 weeks to first decision
+  decision_source: Official (IEEE APS FAQ, ~2024)
+  decision_url: https://ieeeaps.org/ieee-tap/for-authors/faqs
+- acronym: AWPL
+  name: IEEE Antennas and Wireless Propagation Letters
+  track: Antennas, Microwaves & EM
+  type: Letters
+  oa_model: Hybrid
+- acronym: OJAP
+  name: IEEE Open Journal of Antennas and Propagation
+  track: Antennas, Microwaves & EM
+  type: Open journal
+  oa_model: Fully open access
+  notes: APC US$2,160 in the 2026 CONCERT list.
+- acronym: JMMCT
+  name: IEEE Journal on Multiscale and Multiphysics Computational Techniques
+  track: Antennas, Microwaves & EM
+  type: Journal
+  oa_model: Hybrid
+- acronym: TMTT
+  name: IEEE Transactions on Microwave Theory and Techniques
+  track: Antennas, Microwaves & EM
+  type: Transactions
+  oa_model: Hybrid
+- acronym: MWTL
+  name: IEEE Microwave and Wireless Technology Letters
+  track: Antennas, Microwaves & EM
+  type: Letters
+  oa_model: Hybrid
+- acronym: JMW
+  name: IEEE Journal of Microwaves
+  track: Antennas, Microwaves & EM
+  type: Journal
+  oa_model: Fully open access
+- acronym: TTHZ
+  name: IEEE Transactions on Terahertz Science and Technology
+  track: Antennas, Microwaves & EM
+  type: Transactions
+  oa_model: Hybrid
+- acronym: J-ERM
+  name: IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology
+  track: Antennas, Microwaves & EM
+  type: Journal
+  oa_model: Hybrid
+- acronym: TEMC
+  name: IEEE Transactions on Electromagnetic Compatibility
+  track: Antennas, Microwaves & EM
+  type: Transactions
+  oa_model: Hybrid
+- acronym: L-EMCPA
+  name: IEEE Letters on Electromagnetic Compatibility Practice and Applications
+  track: Antennas, Microwaves & EM
+  type: Letters
+  oa_model: Hybrid
+- acronym: TMAG
+  name: IEEE Transactions on Magnetics
+  track: Antennas, Microwaves & EM
+  type: Transactions
+  oa_model: Hybrid
+- acronym: LMAG
+  name: IEEE Magnetics Letters
+  track: Antennas, Microwaves & EM
+  type: Letters
+  oa_model: Hybrid
+- acronym: PJ
+  name: IEEE Photonics Journal
+  track: Photonics, Quantum & Plasma
+  type: Journal
+  oa_model: Fully open access
+- acronym: PTL
+  name: IEEE Photonics Technology Letters
+  track: Photonics, Quantum & Plasma
+  type: Letters
+  oa_model: Hybrid
+- acronym: JQE
+  name: IEEE Journal of Quantum Electronics
+  track: Photonics, Quantum & Plasma
+  type: Journal
+  oa_model: Hybrid
+- acronym: JSTQE
+  name: IEEE Journal of Selected Topics in Quantum Electronics
+  track: Photonics, Quantum & Plasma
+  type: Journal
+  oa_model: Hybrid
+- acronym: JLT
+  name: Journal of Lightwave Technology (IEEE/Optica)
+  track: Photonics, Quantum & Plasma
+  type: Journal
+  oa_model: Hybrid
+- acronym: TQE
+  name: IEEE Transactions on Quantum Engineering
+  track: Photonics, Quantum & Plasma
+  type: Transactions
+  oa_model: Fully open access
+- acronym: TPS
+  name: IEEE Transactions on Plasma Science
+  track: Photonics, Quantum & Plasma
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TASC
+  name: IEEE Transactions on Applied Superconductivity
+  track: Photonics, Quantum & Plasma
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TNS
+  name: IEEE Transactions on Nuclear Science
+  track: Photonics, Quantum & Plasma
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TGRS
+  name: IEEE Transactions on Geoscience and Remote Sensing
+  track: Geoscience, Remote Sensing & Ocean
+  type: Transactions
+  oa_model: Hybrid
+  notes: Overlength charge US$230/page beyond 10 pages (2026).
+- acronym: GRSL
+  name: IEEE Geoscience and Remote Sensing Letters
+  track: Geoscience, Remote Sensing & Ocean
+  type: Letters
+  oa_model: Hybrid
+- acronym: JSTARS
+  name: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+  track: Geoscience, Remote Sensing & Ocean
+  type: Journal
+  oa_model: Fully open access
+- acronym: JOE
+  name: IEEE Journal of Oceanic Engineering
+  track: Geoscience, Remote Sensing & Ocean
+  type: Journal
+  oa_model: Hybrid
+- acronym: TCAS-I
+  name: 'IEEE Transactions on Circuits and Systems I: Regular Papers'
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCAS-II
+  name: 'IEEE Transactions on Circuits and Systems II: Express Briefs'
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: JETCAS
+  name: IEEE Journal on Emerging and Selected Topics in Circuits and Systems
+  track: Circuits, Devices & Semiconductors
+  type: Journal
+  oa_model: Hybrid
+- acronym: TBioCAS
+  name: IEEE Transactions on Biomedical Circuits and Systems
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TVLSI
+  name: IEEE Transactions on Very Large Scale Integration (VLSI) Systems
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCAD
+  name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJCAS
+  name: IEEE Open Journal of Circuits and Systems
+  track: Circuits, Devices & Semiconductors
+  type: Open journal
+  oa_model: Fully open access
+  notes: APC US$2,160 in the 2026 CONCERT list.
+- acronym: JSSC
+  name: IEEE Journal of Solid-State Circuits
+  track: Circuits, Devices & Semiconductors
+  type: Journal
+  oa_model: Hybrid
+- acronym: SSC-L
+  name: IEEE Solid-State Circuits Letters
+  track: Circuits, Devices & Semiconductors
+  type: Letters
+  oa_model: Hybrid
+- acronym: OJSSCS
+  name: IEEE Open Journal of the Solid-State Circuits Society
+  track: Circuits, Devices & Semiconductors
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TED
+  name: IEEE Transactions on Electron Devices
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: EDL
+  name: IEEE Electron Device Letters
+  track: Circuits, Devices & Semiconductors
+  type: Letters
+  oa_model: Hybrid
+- acronym: J-EDS
+  name: IEEE Journal of the Electron Devices Society
+  track: Circuits, Devices & Semiconductors
+  type: Journal
+  oa_model: Fully open access
+- acronym: JXCDC
+  name: IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
+  track: Circuits, Devices & Semiconductors
+  type: Journal
+  oa_model: Fully open access
+- acronym: TSM
+  name: IEEE Transactions on Semiconductor Manufacturing
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TDMR
+  name: IEEE Transactions on Device and Materials Reliability
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCPMT
+  name: IEEE Transactions on Components, Packaging and Manufacturing Technology
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TNANO
+  name: IEEE Transactions on Nanotechnology
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJNANO
+  name: IEEE Open Journal of Nanotechnology
+  track: Circuits, Devices & Semiconductors
+  type: Open journal
+  oa_model: Fully open access
+- acronym: JMEMS
+  name: Journal of Microelectromechanical Systems
+  track: Circuits, Devices & Semiconductors
+  type: Journal
+  oa_model: Hybrid
+- acronym: TUFFC
+  name: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
+  track: Circuits, Devices & Semiconductors
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJUFFC
+  name: IEEE Open Journal of Ultrasonics, Ferroelectrics, and Frequency Control
+  track: Circuits, Devices & Semiconductors
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TPWRS
+  name: IEEE Transactions on Power Systems
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSG
+  name: IEEE Transactions on Smart Grid
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TSTE
+  name: IEEE Transactions on Sustainable Energy
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TEC
+  name: IEEE Transactions on Energy Conversion
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TPWRD
+  name: IEEE Transactions on Power Delivery
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TEMPR
+  name: IEEE Transactions on Energy Markets, Policy and Regulation
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+  model_unconfirmed: true
+- acronym: OAJPE
+  name: IEEE Open Access Journal of Power and Energy
+  track: Power, Energy & Industrial Electronics
+  type: Open journal
+  oa_model: Fully open access
+  notes: APC US$2,160 confirmed by IEEE PES for 2026.
+- acronym: TPEL
+  name: IEEE Transactions on Power Electronics
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: JESTPE
+  name: IEEE Journal of Emerging and Selected Topics in Power Electronics
+  track: Power, Energy & Industrial Electronics
+  type: Journal
+  oa_model: Hybrid
+- acronym: OJPEL
+  name: IEEE Open Journal of Power Electronics
+  track: Power, Energy & Industrial Electronics
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TIE
+  name: IEEE Transactions on Industrial Electronics
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TII
+  name: IEEE Transactions on Industrial Informatics
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: JESTIE
+  name: IEEE Journal of Emerging and Selected Topics in Industrial Electronics
+  track: Power, Energy & Industrial Electronics
+  type: Journal
+  oa_model: Hybrid
+- acronym: TICPS
+  name: IEEE Transactions on Industrial Cyber-Physical Systems
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+  model_unconfirmed: true
+- acronym: OJIES
+  name: IEEE Open Journal of the Industrial Electronics Society
+  track: Power, Energy & Industrial Electronics
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TIA
+  name: IEEE Transactions on Industry Applications
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJIA
+  name: IEEE Open Journal of Industry Applications
+  track: Power, Energy & Industrial Electronics
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TTE
+  name: IEEE Transactions on Transportation Electrification
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TDEI
+  name: IEEE Transactions on Dielectrics and Electrical Insulation
+  track: Power, Energy & Industrial Electronics
+  type: Transactions
+  oa_model: Hybrid
+- acronym: JPV
+  name: IEEE Journal of Photovoltaics
+  track: Power, Energy & Industrial Electronics
+  type: Journal
+  oa_model: Hybrid
+- acronym: TAC
+  name: IEEE Transactions on Automatic Control
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCST
+  name: IEEE Transactions on Control Systems Technology
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCNS
+  name: IEEE Transactions on Control of Network Systems
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: L-CSS
+  name: IEEE Control Systems Letters
+  track: Control, Robotics & Systems
+  type: Letters
+  oa_model: Hybrid
+- acronym: OJ-CSYS
+  name: IEEE Open Journal of Control Systems
+  track: Control, Robotics & Systems
+  type: Open journal
+  oa_model: Fully open access
+- acronym: T-RO
+  name: IEEE Transactions on Robotics
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: RA-L
+  name: IEEE Robotics and Automation Letters
+  track: Control, Robotics & Systems
+  type: Letters
+  oa_model: Hybrid
+- acronym: T-ASE
+  name: IEEE Transactions on Automation Science and Engineering
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: T-MRB
+  name: IEEE Transactions on Medical Robotics and Bionics
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: T-FR
+  name: IEEE Transactions on Field Robotics
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+  model_unconfirmed: true
+- acronym: TMECH
+  name: IEEE/ASME Transactions on Mechatronics
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: ISJ
+  name: IEEE Systems Journal
+  track: Control, Robotics & Systems
+  type: Journal
+  oa_model: Hybrid
+- acronym: OJSE
+  name: IEEE Open Journal of Systems Engineering
+  track: Control, Robotics & Systems
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TR
+  name: IEEE Transactions on Reliability
+  track: Control, Robotics & Systems
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TVT
+  name: IEEE Transactions on Vehicular Technology
+  track: Vehicles & Transportation
+  type: Transactions
+  oa_model: Hybrid
+  decision_time: ~3–10 weeks main review window
+  decision_source: Third-party guidance
+  decision_url: https://manusights.com/blog/ieee-transactions-on-vehicular-technology-under-review
+- acronym: OJVT
+  name: IEEE Open Journal of Vehicular Technology
+  track: Vehicles & Transportation
+  type: Open journal
+  oa_model: Fully open access
+- acronym: T-ITS
+  name: IEEE Transactions on Intelligent Transportation Systems
+  track: Vehicles & Transportation
+  type: Transactions
+  oa_model: Hybrid
+- acronym: T-IV
+  name: IEEE Transactions on Intelligent Vehicles
+  track: Vehicles & Transportation
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJ-ITS
+  name: IEEE Open Journal of Intelligent Transportation Systems
+  track: Vehicles & Transportation
+  type: Open journal
+  oa_model: Fully open access
+- acronym: TIM
+  name: IEEE Transactions on Instrumentation and Measurement
+  track: Instrumentation, Sensors & Measurement
+  type: Transactions
+  oa_model: Hybrid
+- acronym: OJIM
+  name: IEEE Open Journal of Instrumentation and Measurement
+  track: Instrumentation, Sensors & Measurement
+  type: Open journal
+  oa_model: Fully open access
+  notes: APC US$2,160 confirmed by IEEE IMS for 2026.
+- acronym: JSEN
+  name: IEEE Sensors Journal
+  track: Instrumentation, Sensors & Measurement
+  type: Journal
+  oa_model: Hybrid
+- acronym: LSENS
+  name: IEEE Sensors Letters
+  track: Instrumentation, Sensors & Measurement
+  type: Letters
+  oa_model: Hybrid
+- acronym: TBME
+  name: IEEE Transactions on Biomedical Engineering
+  track: Biomedical & Health
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TMI
+  name: IEEE Transactions on Medical Imaging
+  track: Biomedical & Health
+  type: Transactions
+  oa_model: Hybrid
+- acronym: JBHI
+  name: IEEE Journal of Biomedical and Health Informatics
+  track: Biomedical & Health
+  type: Journal
+  oa_model: Hybrid
+- acronym: TNSRE
+  name: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+  track: Biomedical & Health
+  type: Transactions
+  oa_model: Fully open access
+- acronym: RBME
+  name: IEEE Reviews in Biomedical Engineering
+  track: Biomedical & Health
+  type: Review journal
+  oa_model: Hybrid
+- acronym: OJEMB
+  name: IEEE Open Journal of Engineering in Medicine and Biology
+  track: Biomedical & Health
+  type: Open journal
+  oa_model: Fully open access
+- acronym: JTEHM
+  name: IEEE Journal of Translational Engineering in Health and Medicine
+  track: Biomedical & Health
+  type: Journal
+  oa_model: Fully open access
+- acronym: TNB
+  name: IEEE Transactions on NanoBioscience
+  track: Biomedical & Health
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCBB
+  name: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  track: Biomedical & Health
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TRPMS
+  name: IEEE Transactions on Radiation and Plasma Medical Sciences
+  track: Biomedical & Health
+  type: Transactions
+  oa_model: Hybrid
+- acronym: PROC
+  name: Proceedings of the IEEE
+  track: Multidisciplinary, Education & Society
+  type: Journal
+  oa_model: Hybrid
+  notes: Mostly invited papers.
+- acronym: ToE
+  name: IEEE Transactions on Education
+  track: Multidisciplinary, Education & Society
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TPC
+  name: IEEE Transactions on Professional Communication
+  track: Multidisciplinary, Education & Society
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TTS
+  name: IEEE Transactions on Technology and Society
+  track: Multidisciplinary, Education & Society
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TEM
+  name: IEEE Transactions on Engineering Management
+  track: Multidisciplinary, Education & Society
+  type: Transactions
+  oa_model: Hybrid
+- acronym: TCE
+  name: IEEE Transactions on Consumer Electronics
+  track: Multidisciplinary, Education & Society
+  type: Transactions
+  oa_model: Hybrid
+- acronym: CJECE
+  name: IEEE Canadian Journal of Electrical and Computer Engineering
+  track: Multidisciplinary, Education & Society
+  type: Journal
+  oa_model: Hybrid
+- acronym: AESM
+  name: IEEE Aerospace and Electronic Systems Magazine
+  track: Aerospace, Radar & Navigation
+  type: Magazine
+  oa_model: Hybrid magazine
+  aess: true
+- acronym: COMMAG
+  name: IEEE Communications Magazine
+  track: Communications & Networking
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: NET
+  name: IEEE Network
+  track: Communications & Networking
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: WC
+  name: IEEE Wireless Communications
+  track: Communications & Networking
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: IoTM
+  name: IEEE Internet of Things Magazine
+  track: Communications & Networking
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: COMSTD
+  name: IEEE Communications Standards Magazine
+  track: Communications & Networking
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: BITS
+  name: IEEE BITS the Information Theory Magazine
+  track: Communications & Networking
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: VTM
+  name: IEEE Vehicular Technology Magazine
+  track: Vehicles & Transportation
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: ITSM
+  name: IEEE Intelligent Transportation Systems Magazine
+  track: Vehicles & Transportation
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: SPM
+  name: IEEE Signal Processing Magazine
+  track: Signal, Image & Speech Processing
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: CIM
+  name: IEEE Computational Intelligence Magazine
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: COMPUTER
+  name: Computer
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: SOFTWARE
+  name: IEEE Software
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: MICRO
+  name: IEEE Micro
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: S&P
+  name: IEEE Security & Privacy
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: IC
+  name: IEEE Internet Computing
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: IS
+  name: IEEE Intelligent Systems
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: PVC
+  name: IEEE Pervasive Computing
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: ITPRO
+  name: IT Professional
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: CiSE
+  name: Computing in Science & Engineering
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: CG&A
+  name: IEEE Computer Graphics and Applications
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: SMCM
+  name: IEEE Systems, Man, and Cybernetics Magazine
+  track: AI, Computing & Software
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: APM
+  name: IEEE Antennas and Propagation Magazine
+  track: Antennas, Microwaves & EM
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: MMM
+  name: IEEE Microwave Magazine
+  track: Antennas, Microwaves & EM
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: EMCM
+  name: IEEE Electromagnetic Compatibility Magazine
+  track: Antennas, Microwaves & EM
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: GRSM
+  name: IEEE Geoscience and Remote Sensing Magazine
+  track: Geoscience, Remote Sensing & Ocean
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: CASM
+  name: IEEE Circuits and Systems Magazine
+  track: Circuits, Devices & Semiconductors
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: SSCM
+  name: IEEE Solid-State Circuits Magazine
+  track: Circuits, Devices & Semiconductors
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: NANOM
+  name: IEEE Nanotechnology Magazine
+  track: Circuits, Devices & Semiconductors
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: D&T
+  name: IEEE Design & Test
+  track: Circuits, Devices & Semiconductors
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: PEM
+  name: IEEE Power and Energy Magazine
+  track: Power, Energy & Industrial Electronics
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: ELECM
+  name: IEEE Electrification Magazine
+  track: Power, Energy & Industrial Electronics
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: PELM
+  name: IEEE Power Electronics Magazine
+  track: Power, Energy & Industrial Electronics
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: IEM
+  name: IEEE Industrial Electronics Magazine
+  track: Power, Energy & Industrial Electronics
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: IAM
+  name: IEEE Industry Applications Magazine
+  track: Power, Energy & Industrial Electronics
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: EIM
+  name: IEEE Electrical Insulation Magazine
+  track: Power, Energy & Industrial Electronics
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: CSM
+  name: IEEE Control Systems Magazine
+  track: Control, Robotics & Systems
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: RAM
+  name: IEEE Robotics & Automation Magazine
+  track: Control, Robotics & Systems
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: IMM
+  name: IEEE Instrumentation & Measurement Magazine
+  track: Instrumentation, Sensors & Measurement
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: PULSE
+  name: IEEE Pulse
+  track: Biomedical & Health
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: TSM-MAG
+  name: IEEE Technology and Society Magazine
+  track: Multidisciplinary, Education & Society
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: CEM
+  name: IEEE Consumer Electronics Magazine
+  track: Multidisciplinary, Education & Society
+  type: Magazine
+  oa_model: Hybrid magazine
+- acronym: EMR
+  name: IEEE Engineering Management Review
+  track: Multidisciplinary, Education & Society
+  type: Magazine
+  oa_model: Hybrid magazine

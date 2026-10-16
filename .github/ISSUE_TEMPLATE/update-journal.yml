@@ -1,0 +1,40 @@
+name: Add or update a journal
+description: A journal's APC, open-access model or time to first decision is missing or wrong.
+title: "Journal: <acronym>"
+labels: ["journal"]
+body:
+  - type: input
+    id: journal
+    attributes:
+      label: Which journal?
+      placeholder: "IEEE Transactions on Aerospace and Electronic Systems (TAES)"
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What are you adding or fixing?
+      multiple: true
+      options:
+        - Time to first decision
+        - Open-access model (hybrid / fully open access)
+        - APC amount
+        - New journal
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      placeholder: "The journal's author page says the average time to first decision is 10 weeks."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: Official journal or society page preferred.
+      placeholder: https://...
+    validations:
+      required: true
