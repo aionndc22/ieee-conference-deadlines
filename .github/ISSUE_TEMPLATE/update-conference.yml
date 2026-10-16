@@ -1,0 +1,27 @@
+name: Update or fix a conference
+description: A deadline was extended, a date is wrong, the format changed…
+title: "Update: <conference acronym and year>"
+labels: ["update"]
+body:
+  - type: input
+    id: conference
+    attributes:
+      label: Which conference?
+      placeholder: "RadarConf'27"
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+      placeholder: "Paper deadline extended from 31 Oct 2026 to 15 Nov 2026."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: Official page that shows the new information.
+      placeholder: https://...
+    validations:
+      required: true

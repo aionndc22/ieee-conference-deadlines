@@ -1,0 +1,59 @@
+name: Add a conference
+description: Suggest an IEEE / IEEE AESS conference that isn't listed yet.
+title: "Add: <conference acronym and year>"
+labels: ["new conference"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Fill in what you know — partial information is fine as long as there's an official link.
+  - type: input
+    id: name
+    attributes:
+      label: Conference name and acronym
+      placeholder: "IEEE International Conference on Communications (ICC 2027)"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official website or call for papers
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Paper submission deadline
+      description: Say whether it's an abstract or a full-paper deadline if you know.
+      placeholder: "16 Oct 2026 (full paper)"
+  - type: input
+    id: place
+    attributes:
+      label: City, venue and country
+      placeholder: "Washington, D.C., USA"
+  - type: input
+    id: dates
+    attributes:
+      label: Conference dates
+      placeholder: "30 May – 3 Jun 2027"
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - In person
+        - Hybrid
+        - Virtual
+        - Not stated
+  - type: checkboxes
+    id: aess
+    attributes:
+      label: Society
+      options:
+        - label: This is an IEEE AESS (Aerospace and Electronic Systems Society) event
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Other key dates, sponsoring societies, conflicting sources…

@@ -1,0 +1,952 @@
+# IEEE & IEEE AESS conference deadlines — the single source of truth.
+#
+# Edit this file to add or update a conference, then open a pull request.
+# README.md and the website in docs/ are generated from it automatically
+# (see CONTRIBUTING.md for every field and how to preview locally).
+#
+# Required: id, acronym, url, city, country, format, sources, verified
+# Dates are ISO (YYYY-MM-DD). format is one of: In person | Hybrid | Virtual | Not stated
+#
+# Optional:
+#   name            full conference name
+#   organizers      sponsoring societies / host institution
+#   aess: true      IEEE Aerospace and Electronic Systems Society event (sponsored or co-sponsored)
+#   independent: true   run by a college or private organizer; IEEE Xplore inclusion needs IEEE approval
+#   venue           hotel / campus / convention centre
+#   start, end      conference dates (or dates_text when only the month is known)
+#   deadline        main paper (or abstract) submission deadline
+#   deadline_type   abstract | full paper | extended abstract | paper summary | digest
+#   deadline_text   shown when there is no deadline date (e.g. "Not announced (usually mid-Feb)")
+#   deadline_passed: true   deadline is over but its exact date is unknown
+#   deadline_note   other key dates or conflicting sources
+#   notes           anything else worth knowing
+
+# ───────────────────────────── IEEE AESS ─────────────────────────────
+
+- id: plans-2027
+  acronym: PLANS 2027
+  name: IEEE/ION Position, Location and Navigation Symposium
+  url: https://www.ion.org/plans/
+  organizers: IEEE AESS · Institute of Navigation (ION)
+  aess: true
+  city: Portland, Oregon
+  venue: Hilton Portland Downtown
+  country: USA
+  start: 2027-04-12
+  end: 2027-04-15
+  format: In person
+  deadline: 2026-10-16
+  deadline_type: abstract
+  deadline_note: Full manuscript due 1 Feb 2027 (an ION author page says 3 Feb, hard deadline).
+  notes: Presentations must be given in person.
+  sources:
+    - https://www.ion.org/plans/call-for-abstracts.cfm
+    - https://www.ion.org/plans/upload/PLANS27-CFA.pdf
+    - https://www.ion.org/plans/future-meetings.cfm
+  verified: 2026-10-16
+
+- id: radarconf-2027
+  acronym: RadarConf'27
+  name: 2027 IEEE Radar Conference
+  url: https://radarconf2027.org/
+  organizers: IEEE AESS
+  aess: true
+  city: Bengaluru, Karnataka
+  venue: Sheraton Grand Bengaluru Whitefield
+  country: India
+  start: 2027-05-01
+  end: 2027-05-06
+  format: Not stated
+  deadline: 2026-10-31
+  deadline_type: full paper
+  deadline_note: Main conference 4–6 May; boot camp 1–2 May; workshops/tutorials 3 May. Camera-ready 15 Feb 2027.
+  sources:
+    - https://ieee-aess.org/event/conference/2027-ieee-radar-conference
+    - https://ieee-aess.org/files/ieeeaess/2026-08/radarconf2027_cfp_11aug26-1.pdf
+    - https://radarconf2027.org/call-for-special-sessions/
+  verified: 2026-10-15
+
+- id: space-2027
+  acronym: SPACE 2027
+  name: IEEE Space, Aerospace and Defence Conference
+  url: https://ieeespace.org/
+  organizers: IEEE AESS
+  aess: true
+  city: Singapore
+  venue: Marina Bay Sands
+  country: Singapore
+  start: 2027-07-05
+  end: 2027-07-07
+  format: Not stated
+  deadline: 2027-01-31
+  deadline_type: full paper
+  deadline_note: Special-session proposals due 31 Oct 2026. Notification 30 Apr 2027; camera-ready 15 May 2027. The AESS homepage lists 5–11 Jul.
+  notes: Papers 3–6 pages. Accepted papers considered for a special section of IEEE TAES.
+  sources:
+    - https://ieeespace.org/call-for-papers/
+    - https://ieee-aess.org/files/ieeeaess/2026-10/ieee-space-2027_call-for-papers.pdf
+  verified: 2026-10-16
+
+- id: metroaerospace-2027
+  acronym: MetroAeroSpace 2027
+  name: IEEE International Workshop on Metrology for AeroSpace
+  url: https://www.metroaerospace.org/
+  organizers: IEEE AESS · IEEE Instrumentation & Measurement Society
+  aess: true
+  city: Palermo
+  country: Italy
+  start: 2027-06-30
+  end: 2027-07-02
+  format: Not stated
+  deadline: 2027-01-31
+  deadline_type: extended abstract
+  deadline_note: Extended abstract of 4–5 pages. Final paper 30 Apr or 2 May 2027 (the site shows both).
+  sources:
+    - https://www.metroaerospace.org/important-dates
+  verified: 2026-10-16
+
+- id: icns-2027
+  acronym: ICNS 2027
+  name: Integrated Communications, Navigation and Surveillance Conference
+  url: https://i-cns.org/
+  organizers: IEEE AESS · AIAA
+  aess: true
+  city: Herndon, Virginia
+  venue: Westin Washington Dulles Airport
+  country: USA
+  start: 2027-04-06
+  end: 2027-04-08
+  format: In person
+  deadline_text: Not announced (usually mid-Dec to mid-Jan)
+  sources:
+    - https://i-cns.org/
+    - https://wimaxforum.org/Page/Events/ICNS-2027
+  verified: 2026-10-16
+
+- id: fusion-2027
+  acronym: FUSION 2027
+  name: 30th International Conference on Information Fusion
+  url: https://isif.org/post/announcement/fusion-2027
+  organizers: ISIF · IEEE AESS (technical co-sponsor)
+  aess: true
+  city: Buffalo, New York
+  country: USA
+  start: 2027-06-28
+  end: 2027-07-02
+  format: Not stated
+  deadline_text: Not announced (usually mid-Feb)
+  sources:
+    - https://isif.org/post/announcement/fusion-2027
+    - https://www.buffalo.edu/cimif/fusion2027.html
+  verified: 2026-10-16
+
+- id: aero-2027
+  acronym: AERO 2027
+  name: 2027 IEEE Aerospace Conference
+  url: https://www.aeroconf.org/
+  organizers: IEEE AESS
+  aess: true
+  city: Big Sky, Montana
+  venue: Yellowstone Conference Center, Big Sky Resort
+  country: USA
+  start: 2027-03-06
+  end: 2027-03-13
+  format: Not stated
+  deadline: 2026-10-02
+  deadline_type: full paper
+  deadline_note: Abstracts closed 1 Jul 2026. Reviewed papers returned 9 Nov 2026; final papers due 8 Jan 2027.
+  sources:
+    - https://www.aeroconf.org/key-dates
+    - https://aeroconf.org/cms/content_attachments/26/download
+  verified: 2026-10-15
+
+- id: rws-2027
+  acronym: RWS 2027
+  name: IEEE Radio and Wireless Symposium (Radio & Wireless Week)
+  url: https://www.radiowirelessweek.org/
+  organizers: IEEE MTT-S · IEEE AESS (technical co-sponsor)
+  aess: true
+  city: Tampa, Florida
+  venue: Grand Hyatt Tampa Bay
+  country: USA
+  start: 2027-01-17
+  end: 2027-01-20
+  format: Not stated
+  deadline: 2026-07-31
+  deadline_type: paper summary
+  deadline_note: Late-news papers closed 18 Sep 2026. Final manuscripts due 17 Oct 2026.
+  sources:
+    - https://www.radiowirelessweek.org/rws2027cfp/
+    - https://www.radiowirelessweek.org/authors/submission/
+  verified: 2026-10-15
+
+- id: array-2026
+  acronym: ARRAY 2026
+  name: IEEE International Phased Array Symposium
+  url: https://ieee-array.org/
+  organizers: IEEE Boston Section · listed by IEEE AESS
+  aess: true
+  city: Boston, Massachusetts
+  venue: Hynes Convention Center
+  country: USA
+  start: 2026-10-19
+  end: 2026-10-22
+  format: Not stated
+  deadline: 2026-05-08
+  deadline_type: full paper
+  sources:
+    - https://ieee-aess.org/event/conference/2026-ieee-international-phased-array-symposium
+    - https://ieeeboston.org/events/2026-ieee-international-phased-array-symposium-array/
+  verified: 2026-10-16
+
+# ───────────────────────────── Bangladesh ─────────────────────────────
+
+- id: iceeict-2027
+  acronym: ICEEICT 2027
+  name: 7th International Conference on Electrical Engineering and Information & Communication Technology
+  url: https://iceeict.mist.ac.bd/
+  organizers: Military Institute of Science and Technology (MIST)
+  city: Dhaka
+  venue: MIST
+  country: Bangladesh
+  start: 2027-01-28
+  end: 2027-01-30
+  format: Hybrid
+  deadline: 2026-12-05
+  deadline_type: full paper
+  deadline_note: Extended from 25 Oct 2026 (final extension per the official site).
+  sources:
+    - https://iceeict.mist.ac.bd/
+  verified: 2026-10-16
+
+- id: qpain-2027
+  acronym: QPAIN 2027
+  name: IEEE International Conference on Quantum Photonics, Artificial Intelligence & Networking
+  url: https://qpain.org/
+  organizers: IEEE Photonics Society Bangladesh Chapter
+  city: Chattogram
+  country: Bangladesh
+  start: 2027-04-08
+  end: 2027-04-10
+  format: Hybrid
+  deadline: 2026-11-30
+  deadline_type: full paper
+  deadline_note: Notification 5 Feb 2027; camera-ready and registration 20 Feb 2027.
+  notes: The IEEE Photonics Society calendar lists it as hybrid; one other listing says in person.
+  sources:
+    - https://qpain.org/call-for-papers
+    - https://ieeephotonics.org/conferences/
+  verified: 2026-10-16
+
+- id: idaa-2027
+  acronym: IDAA 2027
+  name: International Conference on Intelligent Data Analysis and Applications
+  url: https://idaa.diu.edu.bd/
+  organizers: Daffodil International University
+  city: Dhaka
+  venue: Daffodil International University
+  country: Bangladesh
+  start: 2027-06-11
+  end: 2027-06-12
+  format: Not stated
+  deadline: 2026-12-31
+  deadline_type: full paper
+  deadline_note: The official page also shows 31 Mar 2027 under Important Dates — confirm before relying on either.
+  notes: Proceedings by IEEE Xplore (per the conference site).
+  sources:
+    - https://idaa.diu.edu.bd/
+    - https://www.myhuiban.com/conference/5884
+  verified: 2026-10-16
+
+- id: wiecon-ece-2026
+  acronym: WIECON-ECE 2026
+  name: IEEE International Women in Engineering (WIE) Conference on Electrical and Computer Engineering
+  url: https://conf.info.bd/
+  city: Dhaka
+  venue: Southeast University
+  country: Bangladesh
+  start: 2026-10-23
+  end: 2026-10-24
+  format: Not stated
+  deadline: 2026-08-01
+  deadline_type: full paper
+  notes: Details from a conference aggregator only; not confirmed on an official site.
+  sources:
+    - https://conf.info.bd/
+  verified: 2026-10-15
+
+- id: iciset-2026
+  acronym: ICISET 2026
+  name: International Conference on Innovations in Science, Engineering and Technology
+  url: https://iciset.iiuc.ac.bd/
+  organizers: International Islamic University Chittagong (IIUC) · IEEE Bangladesh Section (technical co-sponsor)
+  city: Chattogram
+  venue: IIUC
+  country: Bangladesh
+  start: 2026-11-08
+  end: 2026-11-10
+  format: Not stated
+  deadline_passed: true
+  sources:
+    - https://iciset.iiuc.ac.bd/
+  verified: 2026-10-15
+
+- id: sti-2026
+  acronym: STI 2026
+  name: IEEE 8th International Conference on Sustainable Technologies for Industry 5.0
+  url: https://sti.green.edu.bd/
+  organizers: Green University of Bangladesh
+  city: Dhaka
+  venue: Green University permanent campus, Purbachal
+  country: Bangladesh
+  start: 2026-12-03
+  end: 2026-12-04
+  format: Not stated
+  deadline: 2026-08-15
+  deadline_type: full paper
+  deadline_note: The university news post and EasyChair list 10–11 Dec 2026 instead.
+  sources:
+    - https://sti.green.edu.bd/
+    - https://green.edu.bd/news-details/call-for-papers-sti-2026
+  verified: 2026-10-15
+
+- id: icece-2026
+  acronym: ICECE 2026
+  name: 14th International Conference on Electrical and Computer Engineering
+  url: https://icece.org.bd/2026/
+  organizers: Dept. of EEE, BUET
+  city: Dhaka
+  venue: ECE Building, BUET
+  country: Bangladesh
+  start: 2026-12-10
+  end: 2026-12-12
+  format: Not stated
+  deadline: 2026-09-15
+  deadline_type: full paper
+  deadline_note: Camera-ready due 10 Nov 2026.
+  sources:
+    - https://icece.org.bd/2026/
+  verified: 2026-10-16
+
+- id: iccit-2026
+  acronym: ICCIT 2026
+  name: 29th International Conference on Computer and Information Technology
+  url: https://iccit.org.bd/2026/
+  organizers: IEEE Bangladesh Section
+  city: Cox's Bazar
+  venue: Long Beach Hotel
+  country: Bangladesh
+  start: 2026-12-18
+  end: 2026-12-20
+  format: Hybrid
+  deadline: 2026-09-20
+  deadline_type: full paper
+  deadline_note: Official pages show an extension to 31 Aug or 20 Sep 2026.
+  sources:
+    - https://iccit.org.bd/2026/
+  verified: 2026-10-16
+
+- id: icrest-2027
+  acronym: ICREST'27
+  name: 5th International Conference on Robotics, Electrical and Signal Processing Techniques
+  url: https://enotice.vtools.ieee.org/public/206757
+  organizers: American International University-Bangladesh (AIUB) · IEEE Bangladesh Section (technical sponsorship applied)
+  city: Dhaka
+  venue: AIUB
+  country: Bangladesh
+  start: 2027-01-07
+  end: 2027-01-08
+  format: Not stated
+  deadline: 2026-09-30
+  deadline_type: full paper
+  sources:
+    - https://enotice.vtools.ieee.org/public/206757
+  verified: 2026-10-15
+
+# ───────────────────────────── India ─────────────────────────────
+
+- id: ncc-2027
+  acronym: NCC 2027
+  name: 33rd National Conference on Communications
+  url: https://ece.iisc.ac.in/~ncc2027/
+  organizers: IISc · IIT Palakkad · IIT Goa · IIIT Bangalore
+  city: Bengaluru, Karnataka
+  venue: IISc
+  country: India
+  start: 2027-02-17
+  end: 2027-02-20
+  format: Not stated
+  deadline: 2026-10-16
+  deadline_type: full paper
+  deadline_note: Notification 24 Dec 2026; camera-ready 8 Jan 2027. 6 pages, IEEE format, double-blind.
+  sources:
+    - https://ece.iisc.ac.in/~ncc2027/cfp.html
+  verified: 2026-10-15
+
+- id: icipcn-2027
+  acronym: ICIPCN 2027
+  url: https://icipcn.com/2027/
+  independent: true
+  city: Dindigul, Tamil Nadu
+  country: India
+  start: 2026-12-26
+  end: 2026-12-28
+  format: Not stated
+  deadline: 2026-10-29
+  deadline_type: full paper
+  sources:
+    - https://cis.ieee.org/conferences/conference-calendar
+  verified: 2026-10-15
+
+- id: icears-2027
+  acronym: ICEARS 2027
+  name: International Conference on Electronics and Renewable Systems
+  url: https://icears.com/2027/
+  independent: true
+  city: Thoothukudi, Tamil Nadu
+  venue: St. Mother Theresa Engineering College
+  country: India
+  start: 2027-02-22
+  end: 2027-02-24
+  format: Not stated
+  deadline: 2026-11-09
+  deadline_type: full paper
+  sources:
+    - https://icears.com/2027/
+    - https://www.myhuiban.com/conference/5809
+  verified: 2026-10-16
+
+- id: icaaic-2027
+  acronym: ICAAIC 2027
+  url: https://cis.ieee.org/conferences/conference-calendar
+  independent: true
+  city: Salem, Tamil Nadu
+  country: India
+  start: 2027-01-21
+  end: 2027-01-23
+  format: Not stated
+  deadline: 2026-11-09
+  deadline_type: full paper
+  sources:
+    - https://cis.ieee.org/conferences/conference-calendar
+  verified: 2026-10-15
+
+- id: indiacom-2027
+  acronym: INDIACom-2027
+  name: International Conference on Computing for Sustainable Global Development
+  url: https://bvicam.ac.in/indiacom/
+  organizers: Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)
+  city: New Delhi
+  venue: BVICAM, Bharati Vidyapeeth
+  country: India
+  start: 2027-04-07
+  end: 2027-04-09
+  format: Not stated
+  deadline: 2026-12-07
+  deadline_type: full paper
+  deadline_note: Final version of accepted papers due Feb 2027.
+  notes: IEEE Conference ID 74162; papers forwarded to IEEE Xplore subject to IEEE review.
+  sources:
+    - https://bvicam.ac.in/indiacom/
+  verified: 2026-10-16
+
+- id: icetics-2027
+  acronym: ICETICS 2027
+  url: https://bgibhopal.com/icetics-2027/
+  organizers: Bhopal Group of Institutions (BGI)
+  independent: true
+  city: Bhopal, Madhya Pradesh
+  country: India
+  dates_text: July 2027
+  format: Not stated
+  deadline: 2027-01-10
+  deadline_type: full paper
+  sources:
+    - https://bgibhopal.com/icetics-2027/
+  verified: 2026-10-15
+
+- id: conecct-2027
+  acronym: IEEE CONECCT 2027
+  name: IEEE International Conference on Electronics, Computing and Communication Technologies
+  url: https://ieee-conecct.org/
+  organizers: IEEE Bangalore Section
+  city: Bengaluru, Karnataka
+  country: India
+  start: 2027-07-29
+  end: 2027-07-31
+  format: Not stated
+  deadline: 2027-02-15
+  deadline_type: full paper
+  deadline_note: Submissions open 15 Dec 2026. One aggregator lists 13 Mar 2027 with a 15 Dec deadline — the official site is used here.
+  sources:
+    - https://ieee-conecct.org/
+  verified: 2026-10-15
+
+- id: ic4-2027
+  acronym: IEEE IC4 2027
+  url: https://callforpaper.org/cfp/call-for-papers-ieee-ic4-2027
+  independent: true
+  city: Indore, Madhya Pradesh
+  country: India
+  start: 2027-03-18
+  end: 2027-03-20
+  format: Not stated
+  deadline_text: Not found
+  sources:
+    - https://callforpaper.org/cfp/call-for-papers-ieee-ic4-2027
+  verified: 2026-10-15
+
+- id: ingarss-2026
+  acronym: InGARSS 2026
+  name: IEEE India Geoscience and Remote Sensing Symposium
+  url: https://events.vtools.ieee.org/m/537762
+  organizers: IEEE GRSS
+  city: Hyderabad, Telangana
+  country: India
+  start: 2026-12-01
+  end: 2026-12-04
+  format: In person
+  deadline: 2026-07-15
+  deadline_type: full paper
+  deadline_note: Originally 30 Jun 2026, extended to 15 Jul 2026.
+  sources:
+    - https://events.vtools.ieee.org/m/537762
+    - https://www.grss-ieee.org/resources/news/call-for-papers-ingarss-2026/
+  verified: 2026-10-15
+
+- id: mapcon-2026
+  acronym: IEEE MAPCON 2026
+  name: IEEE Microwaves, Antennas and Propagation Conference
+  url: https://ieeemapcon.org/
+  organizers: IEEE MTT-S · IEEE AP-S · IEEE EMC-S
+  city: Nagpur, Maharashtra
+  venue: IIM Nagpur
+  country: India
+  start: 2026-12-14
+  end: 2026-12-18
+  format: In person
+  deadline: 2026-08-03
+  deadline_type: full paper
+  deadline_note: Sources list 7 Jul, 3 Aug (extended) or 31 Aug 2026. Early-bird registration ends 25 Oct 2026.
+  sources:
+    - https://ieeemapcon.org/
+    - https://enotice.vtools.ieee.org/public/204950
+  verified: 2026-10-15
+
+- id: ants-2026
+  acronym: IEEE ANTS 2026
+  name: IEEE International Conference on Advanced Networks and Telecommunications Systems
+  url: https://ants2026.ieee-ants.org/
+  organizers: IEEE ComSoc
+  city: Roorkee, Uttarakhand
+  venue: IIT Roorkee
+  country: India
+  start: 2026-12-17
+  end: 2026-12-20
+  format: Not stated
+  deadline: 2026-07-08
+  deadline_type: full paper
+  sources:
+    - https://www.myhuiban.com/conference/1097
+  verified: 2026-10-15
+
+- id: indicon-2026
+  acronym: INDICON 2026
+  name: 23rd IEEE India Council International Conference
+  url: https://ieeeindiacouncil.org/ieee-india-council-international-conference-indicon-2026/
+  organizers: IEEE India Council
+  city: Chennai, Tamil Nadu
+  venue: Sri Sai Ram Engineering College
+  country: India
+  start: 2026-12-18
+  end: 2026-12-20
+  format: Not stated
+  deadline: 2026-08-31
+  deadline_type: full paper
+  deadline_note: Acceptance 2 Nov 2026; camera-ready 16 Nov 2026.
+  sources:
+    - https://ieeeindiacouncil.org/ieee-india-council-international-conference-indicon-2026/
+  verified: 2026-10-15
+
+- id: comsnets-2027
+  acronym: COMSNETS 2027
+  name: 19th International Conference on COMmunication Systems & NETworkS
+  url: https://www.comsnets.org/
+  organizers: COMSNETS Association · IEEE ComSoc (technical co-sponsor)
+  city: Bengaluru, Karnataka
+  venue: Chancery Pavilion
+  country: India
+  start: 2027-01-05
+  end: 2027-01-09
+  format: Not stated
+  deadline: 2026-08-31
+  deadline_type: full paper
+  deadline_note: Deadline from third-party trackers; the official call did not show a date.
+  sources:
+    - https://www.comsnets.org/
+    - https://www.getpaperpilot.com/deadlines/comsnets-2027.html
+  verified: 2026-10-15
+
+- id: aiei-2027
+  acronym: AIEI 2027
+  url: https://www.aiengineering-conference.org/
+  independent: true
+  city: Bengaluru, Karnataka
+  country: India
+  start: 2027-01-21
+  end: 2027-01-23
+  format: Not stated
+  deadline: 2026-09-30
+  deadline_type: full paper
+  sources:
+    - https://www.aiengineering-conference.org/
+  verified: 2026-10-15
+
+# ───────────────────────────── USA ─────────────────────────────
+
+- id: icc-2027
+  acronym: IEEE ICC 2027
+  name: IEEE International Conference on Communications
+  url: https://icc2027.ieee-icc.org/
+  organizers: IEEE ComSoc
+  city: Washington, D.C.
+  country: USA
+  start: 2027-05-30
+  end: 2027-06-03
+  format: In person
+  deadline: 2026-10-16
+  deadline_type: full paper
+  deadline_note: Official site says 16 Oct; ComSoc's page and aggregators say 2 Oct. Notification 15 Jan 2027.
+  sources:
+    - https://icc2027.ieee-icc.org/authors
+    - https://icc2027.ieee-icc.org/authors/call-symposium-papers
+    - https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2027
+  verified: 2026-10-16
+
+- id: wowmom-2027
+  acronym: IEEE WoWMoM 2027
+  name: IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks
+  url: https://callforpaper.org/call-for-papers-ieee-wowmom-2027
+  organizers: IEEE ComSoc
+  city: Irvine, California
+  country: USA
+  dates_text: June 2027
+  format: Not stated
+  deadline: 2026-12-01
+  deadline_type: full paper
+  notes: Date and location from a single listing; confirm on the official site.
+  sources:
+    - https://callforpaper.org/call-for-papers-ieee-wowmom-2027
+  verified: 2026-10-16
+
+- id: ims-2027
+  acronym: IEEE IMS 2027
+  name: IEEE MTT-S International Microwave Symposium
+  url: https://ims-ieee.org/
+  organizers: IEEE MTT-S
+  city: San Antonio, Texas
+  venue: Henry B. Gonzalez Convention Center
+  country: USA
+  start: 2027-05-23
+  end: 2027-05-28
+  format: Not stated
+  deadline: 2026-12-08
+  deadline_type: full paper
+  deadline_note: RFIC Symposium papers due 6 Jan 2027.
+  sources:
+    - https://ims-ieee.org/sites/ims/files/ims2027-call-for-papers_16september2026.pdf
+    - https://ims-ieee.org/conferenceexhibitionschedule
+    - https://ims-ieee.org/rfic/home
+  verified: 2026-10-16
+
+- id: southeastcon-2027
+  acronym: IEEE SoutheastCon 2027
+  name: IEEE SoutheastCon 2027 — "Launching A Space Coast Odyssey"
+  url: https://ieeesoutheastcon.org/
+  organizers: IEEE Region 3
+  city: Daytona Beach, Florida
+  venue: Hilton Daytona Beach Oceanfront Resort
+  country: USA
+  start: 2027-04-15
+  end: 2027-04-18
+  format: Not stated
+  deadline: 2026-12-30
+  deadline_type: full paper
+  deadline_note: Rolling review (decisions within ~20 days). Extended abstracts (2 pages) accepted too. Camera-ready 15–25 Feb 2027.
+  sources:
+    - https://ieeesoutheastcon.org/call-for-papers/
+  verified: 2026-10-16
+
+- id: acc-2027
+  acronym: ACC 2027
+  name: American Control Conference
+  url: https://acc2027.a2c2.org/
+  organizers: AACC · IEEE Control Systems Society
+  city: Philadelphia, Pennsylvania
+  venue: Philadelphia Marriott Downtown
+  country: USA
+  start: 2027-07-07
+  end: 2027-07-09
+  format: Not stated
+  deadline_text: Not confirmed — check the official site
+  sources:
+    - https://acc2027.a2c2.org/
+  verified: 2026-10-16
+
+- id: milcom-2027
+  acronym: MILCOM 2027
+  name: IEEE Military Communications Conference
+  url: https://events.vtools.ieee.org/m/549317
+  organizers: IEEE ComSoc · AFCEA
+  city: San Antonio, Texas
+  country: USA
+  start: 2027-10-18
+  end: 2027-10-22
+  format: Not stated
+  deadline_text: Not announced
+  sources:
+    - https://events.vtools.ieee.org/m/549317
+  verified: 2026-10-16
+
+# ───────────────────────────── Other countries ─────────────────────────────
+
+- id: wcnc-2027
+  acronym: IEEE WCNC 2027
+  name: IEEE Wireless Communications and Networking Conference
+  url: https://wcnc2027.ieee-wcnc.org/
+  organizers: IEEE ComSoc
+  city: Panama City
+  country: Panama
+  start: 2027-04-05
+  end: 2027-04-08
+  format: In person
+  deadline: 2026-10-26
+  deadline_type: full paper
+  deadline_note: Official site lists 26 Oct as the final deadline; ComSoc posts show 15 Sep and 5 Oct.
+  sources:
+    - https://wcnc2027.ieee-wcnc.org/
+    - https://www.comsoc.org/conferences-events/ieee-wireless-communications-and-networking-conference-2027
+  verified: 2026-10-16
+
+- id: i2mtc-2027
+  acronym: I2MTC 2027
+  name: IEEE International Instrumentation and Measurement Technology Conference
+  url: https://i2mtc.ieee-ims.org/2027/
+  organizers: IEEE Instrumentation & Measurement Society
+  city: Chongqing
+  country: China
+  start: 2027-05-17
+  end: 2027-05-20
+  format: Not stated
+  deadline: 2026-12-04
+  deadline_type: full paper
+  deadline_note: Revised paper 12 Feb 2027; final manuscript 19 Mar 2027.
+  sources:
+    - https://ieee-ims.org/files/ieeeims/2026-06/i2mtc27-cfp_web-03.pdf
+  verified: 2026-10-16
+
+- id: ias-am-2027
+  acronym: IEEE IAS Annual Meeting 2027
+  name: IEEE Industry Applications Society Annual Meeting
+  url: https://ias-am.ieee.org/2027/
+  organizers: IEEE Industry Applications Society
+  city: Rome
+  country: Italy
+  start: 2027-06-27
+  end: 2027-07-01
+  format: Not stated
+  deadline: 2026-12-07
+  deadline_type: digest
+  deadline_note: Digest deadline from the IAS 2027 call-for-papers page; another IAS page still shows the call as "coming soon".
+  sources:
+    - https://ias-am.ieee.org/2027/call-for-papers/
+    - https://ias-am.ieee.org/2027/
+  verified: 2026-10-16
+
+- id: isie-2027
+  acronym: IEEE ISIE 2027
+  name: IEEE International Symposium on Industrial Electronics
+  url: https://isie2027.ieee-ies.org/
+  organizers: IEEE Industrial Electronics Society
+  city: Paris
+  country: France
+  dates_text: June/July 2027
+  format: Not stated
+  deadline: 2026-12-15
+  deadline_type: full paper
+  notes: The official site shows two date ranges (15–17 Jun and 30 Jun – 3 Jul 2027).
+  sources:
+    - https://isie2027.ieee-ies.org/call-for-papers/important-dates/
+    - https://isie2027.ieee-ies.org/important-dates/
+  verified: 2026-10-16
+
+- id: igarss-2027
+  acronym: IGARSS 2027
+  name: IEEE International Geoscience and Remote Sensing Symposium
+  url: https://www.grss-ieee.org/event/2027-ieee-international-geoscience-and-remote-sensing-symposium/
+  organizers: IEEE GRSS
+  city: Reykjavík
+  venue: Harpa Concert Hall & Conference Centre
+  country: Iceland
+  start: 2027-07-11
+  end: 2027-07-16
+  format: Not stated
+  deadline: 2027-01-10
+  deadline_type: full paper
+  deadline_note: Submission portal opens 10 Nov 2026. One listing says 11 Jan.
+  sources:
+    - https://www.grss-ieee.org/event/2027-ieee-international-geoscience-and-remote-sensing-symposium/
+  verified: 2026-10-16
+
+- id: aps-ursi-2027
+  acronym: IEEE AP-S/URSI 2027
+  name: IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting
+  url: https://2027.apsursi.org/
+  organizers: IEEE Antennas and Propagation Society
+  city: Kyoto
+  venue: Kyoto International Conference Center
+  country: Japan
+  start: 2027-06-20
+  end: 2027-06-25
+  format: Not stated
+  deadline: 2027-01-11
+  deadline_type: full paper
+  deadline_note: 23:59 AoE; the site says there will be no extension.
+  sources:
+    - https://2027.apsursi.org/
+  verified: 2026-10-16
+
+- id: ccece-2027
+  acronym: IEEE CCECE 2027
+  name: 40th IEEE Canadian Conference on Electrical and Computer Engineering
+  url: https://attend.ieee.org/ccece-2027
+  organizers: IEEE Canada
+  city: Toronto, Ontario
+  country: Canada
+  start: 2027-05-24
+  end: 2027-05-27
+  format: Not stated
+  deadline: 2027-01-25
+  deadline_type: full paper
+  sources:
+    - https://attend.ieee.org/ccece-2027/authors/
+  verified: 2026-10-16
+
+- id: vtc2027-fall
+  acronym: IEEE VTC2027-Fall
+  name: 2027 IEEE 106th Vehicular Technology Conference
+  url: https://events.vtsociety.org/vtc2027-fall/
+  organizers: IEEE Vehicular Technology Society
+  city: Osaka
+  country: Japan
+  start: 2027-09-27
+  end: 2027-09-30
+  format: Not stated
+  deadline: 2027-02-01
+  deadline_type: full paper
+  deadline_note: Notification 14 Apr 2027.
+  sources:
+    - https://events.vtsociety.org/vtc2027-fall/call-for-papers-2/
+    - https://vtsociety.org/event/conference/2027-ieee-106th-vehicular-technology-conference
+  verified: 2026-10-16
+
+- id: iros-2027
+  acronym: IEEE/RSJ IROS 2027
+  name: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  url: https://www.ieee-ras.org/events/category/important-dates/
+  organizers: IEEE RAS · RSJ
+  city: Florence
+  venue: Fortezza da Basso
+  country: Italy
+  start: 2027-09-26
+  end: 2027-10-01
+  format: Not stated
+  deadline: 2027-03-01
+  deadline_type: full paper
+  deadline_note: 23:59 AoE.
+  sources:
+    - https://www.ieee-ras.org/events/category/important-dates/
+    - https://mldeadlines.com/conference/iros/
+  verified: 2026-10-16
+
+- id: vtc2027-spring
+  acronym: IEEE VTC2027-Spring
+  name: 2027 IEEE 105th Vehicular Technology Conference
+  url: https://events.vtsociety.org/vtc2027-spring/
+  organizers: IEEE Vehicular Technology Society
+  city: Hamburg
+  country: Germany
+  start: 2027-06-20
+  end: 2027-06-23
+  format: Not stated
+  deadline: 2026-10-14
+  deadline_type: full paper
+  deadline_note: Final extension; earlier pages show 30 Sep 2026.
+  sources:
+    - https://events.vtsociety.org/vtc2027-spring/
+  verified: 2026-10-16
+
+- id: icra-2027
+  acronym: IEEE ICRA 2027
+  name: IEEE International Conference on Robotics and Automation
+  url: https://2027.ieee-icra.org/
+  organizers: IEEE RAS
+  city: Seoul
+  venue: COEX
+  country: South Korea
+  start: 2027-05-24
+  end: 2027-05-28
+  format: Not stated
+  deadline: 2026-09-15
+  deadline_type: full paper
+  sources:
+    - https://www.beri.net/events/icra-2027
+  verified: 2026-10-16
+
+- id: iv-2027
+  acronym: IEEE IV 2027
+  name: 38th IEEE Intelligent Vehicles Symposium
+  url: https://ieee-itss.org/conf/iv/
+  organizers: IEEE ITS Society
+  city: Perth, Western Australia
+  country: Australia
+  start: 2027-06-15
+  end: 2027-06-18
+  format: Not stated
+  deadline_text: Not announced (2026 edition closed in early Oct)
+  sources:
+    - https://ieee-itss.org/events/tag/iv/
+    - https://www.beri.net/events/ieee-iv-2027
+  verified: 2026-10-16
+
+- id: icip-2027
+  acronym: IEEE ICIP 2027
+  name: IEEE International Conference on Image Processing
+  url: https://2027.ieeeicip.org/
+  organizers: IEEE Signal Processing Society
+  city: Singapore
+  country: Singapore
+  start: 2027-11-29
+  end: 2027-12-03
+  format: In person
+  deadline_text: Not announced (one tracker says ~1 Feb 2027, tentative)
+  notes: Co-located with IEEE CAI 2027 per one listing.
+  sources:
+    - https://2027.ieeeicip.org/
+    - https://www.beri.net/events/icip-2027
+  verified: 2026-10-16
+
+- id: globecom-2027
+  acronym: IEEE GLOBECOM 2027
+  name: IEEE Global Communications Conference
+  url: https://www.showsbee.com/fairs/106189-IEEE-GLOBECOM-2027.html
+  organizers: IEEE ComSoc
+  city: Abu Dhabi
+  country: United Arab Emirates
+  start: 2027-12-06
+  end: 2027-12-10
+  format: Not stated
+  deadline_text: Not announced (usually around April)
+  sources:
+    - https://www.showsbee.com/fairs/106189-IEEE-GLOBECOM-2027.html
+  verified: 2026-10-16

@@ -1,0 +1,38 @@
+# Conferences expected but not yet announced (no dates, venue or deadline).
+# When a call for papers appears, move the entry to conferences.yml with full details.
+
+- name: DASC 2027 — AIAA/IEEE Digital Avionics Systems Conference (AESS)
+  expected: Usually September, North America; abstracts due around February.
+  url: https://dasconline.org/
+
+- name: IEEE AUTOTESTCON 2027 (AESS)
+  expected: Usually late August / early September, USA; abstracts due around April–May.
+  url: https://autotestcon.com/
+
+- name: IEEE NAECON 2027 — National Aerospace & Electronics Conference
+  expected: Usually July–August, Ohio, USA; abstracts due around April–May.
+  url: https://attend.ieee.org/naecon-2026
+
+- name: IRS 2027 — International Radar Symposium (AESS co-sponsored)
+  expected: Usually May; one listing says Vienna, Austria (unconfirmed).
+  url: https://ieee-aess.org/event/conference/2026-27th-international-radar-symposium
+
+- name: IEEE WiSEE 2027 — Wireless for Space and Extreme Environments (AESS)
+  expected: Not yet announced.
+  url: https://ieee-aess.org/conferences
+
+- name: ICUAS 2027 — International Conference on Unmanned Aircraft Systems
+  expected: Usually June; venue TBA. Beware similarly named WASET events.
+  url: https://ieee-ras.org/conferences-workshops/technically-co-sponsored/icuas
+
+- name: IEEE ISIT 2027 — International Symposium on Information Theory
+  expected: Usually late June / July; paper deadline usually late January.
+  url: https://www.itsoc.org/
+
+- name: IEEE CDC 2027 — Conference on Decision and Control
+  expected: December 2027; paper deadline usually March.
+  url: https://ieeecss.org/conferences
+
+- name: IEEE TENCON 2027 — IEEE Region 10 Conference
+  expected: Usually October–November; venue TBA.
+  url: https://www.ieeer10.org/r10-flagship-events/
