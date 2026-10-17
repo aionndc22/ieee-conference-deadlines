@@ -1,75 +1,7 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "source": "https://github.com/aionndc22/ieee-conference-deadlines",
   "conferences": [
-    {
-      "id": "icc-2027",
-      "acronym": "IEEE ICC 2027",
-      "url": "https://icc2027.ieee-icc.org/",
-      "city": "Washington, D.C.",
-      "country": "USA",
-      "format": "In person",
-      "sources": [
-        "https://icc2027.ieee-icc.org/authors",
-        "https://icc2027.ieee-icc.org/authors/call-symposium-papers",
-        "https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2027"
-      ],
-      "verified": "2026-10-16",
-      "name": "IEEE International Conference on Communications",
-      "organizers": "IEEE ComSoc",
-      "start": "2027-05-30",
-      "end": "2027-06-03",
-      "deadline": "2026-10-16",
-      "deadline_type": "full paper",
-      "deadline_note": "Official site says 16 Oct; ComSoc's page and aggregators say 2 Oct. Notification 15 Jan 2027.",
-      "status": "open"
-    },
-    {
-      "id": "ncc-2027",
-      "acronym": "NCC 2027",
-      "url": "https://ece.iisc.ac.in/~ncc2027/",
-      "city": "Bengaluru, Karnataka",
-      "country": "India",
-      "format": "Not stated",
-      "sources": [
-        "https://ece.iisc.ac.in/~ncc2027/cfp.html"
-      ],
-      "verified": "2026-10-15",
-      "name": "33rd National Conference on Communications",
-      "organizers": "IISc · IIT Palakkad · IIT Goa · IIIT Bangalore",
-      "venue": "IISc",
-      "start": "2027-02-17",
-      "end": "2027-02-20",
-      "deadline": "2026-10-16",
-      "deadline_type": "full paper",
-      "deadline_note": "Notification 24 Dec 2026; camera-ready 8 Jan 2027. 6 pages, IEEE format, double-blind.",
-      "status": "open"
-    },
-    {
-      "id": "plans-2027",
-      "acronym": "PLANS 2027",
-      "url": "https://www.ion.org/plans/",
-      "city": "Portland, Oregon",
-      "country": "USA",
-      "format": "In person",
-      "sources": [
-        "https://www.ion.org/plans/call-for-abstracts.cfm",
-        "https://www.ion.org/plans/upload/PLANS27-CFA.pdf",
-        "https://www.ion.org/plans/future-meetings.cfm"
-      ],
-      "verified": "2026-10-16",
-      "name": "IEEE/ION Position, Location and Navigation Symposium",
-      "organizers": "IEEE AESS · Institute of Navigation (ION)",
-      "aess": true,
-      "venue": "Hilton Portland Downtown",
-      "start": "2027-04-12",
-      "end": "2027-04-15",
-      "deadline": "2026-10-16",
-      "deadline_type": "abstract",
-      "deadline_note": "Full manuscript due 1 Feb 2027 (an ION author page says 3 Feb, hard deadline).",
-      "notes": "Presentations must be given in person.",
-      "status": "open"
-    },
     {
       "id": "wcnc-2027",
       "acronym": "IEEE WCNC 2027",
@@ -1016,6 +948,27 @@
       "status": "closed"
     },
     {
+      "id": "ncc-2027",
+      "acronym": "NCC 2027",
+      "url": "https://ece.iisc.ac.in/~ncc2027/",
+      "city": "Bengaluru, Karnataka",
+      "country": "India",
+      "format": "Not stated",
+      "sources": [
+        "https://ece.iisc.ac.in/~ncc2027/cfp.html"
+      ],
+      "verified": "2026-10-15",
+      "name": "33rd National Conference on Communications",
+      "organizers": "IISc · IIT Palakkad · IIT Goa · IIIT Bangalore",
+      "venue": "IISc",
+      "start": "2027-02-17",
+      "end": "2027-02-20",
+      "deadline": "2026-10-16",
+      "deadline_type": "full paper",
+      "deadline_note": "Notification 24 Dec 2026; camera-ready 8 Jan 2027. 6 pages, IEEE format, double-blind.",
+      "status": "closed"
+    },
+    {
       "id": "aero-2027",
       "acronym": "AERO 2027",
       "url": "https://www.aeroconf.org/",
@@ -1039,6 +992,31 @@
       "status": "closed"
     },
     {
+      "id": "plans-2027",
+      "acronym": "PLANS 2027",
+      "url": "https://www.ion.org/plans/",
+      "city": "Portland, Oregon",
+      "country": "USA",
+      "format": "In person",
+      "sources": [
+        "https://www.ion.org/plans/call-for-abstracts.cfm",
+        "https://www.ion.org/plans/upload/PLANS27-CFA.pdf",
+        "https://www.ion.org/plans/future-meetings.cfm"
+      ],
+      "verified": "2026-10-16",
+      "name": "IEEE/ION Position, Location and Navigation Symposium",
+      "organizers": "IEEE AESS · Institute of Navigation (ION)",
+      "aess": true,
+      "venue": "Hilton Portland Downtown",
+      "start": "2027-04-12",
+      "end": "2027-04-15",
+      "deadline": "2026-10-16",
+      "deadline_type": "abstract",
+      "deadline_note": "Full manuscript due 1 Feb 2027 (an ION author page says 3 Feb, hard deadline).",
+      "notes": "Presentations must be given in person.",
+      "status": "closed"
+    },
+    {
       "id": "icra-2027",
       "acronym": "IEEE ICRA 2027",
       "url": "https://2027.ieee-icra.org/",
@@ -1056,6 +1034,28 @@
       "end": "2027-05-28",
       "deadline": "2026-09-15",
       "deadline_type": "full paper",
+      "status": "closed"
+    },
+    {
+      "id": "icc-2027",
+      "acronym": "IEEE ICC 2027",
+      "url": "https://icc2027.ieee-icc.org/",
+      "city": "Washington, D.C.",
+      "country": "USA",
+      "format": "In person",
+      "sources": [
+        "https://icc2027.ieee-icc.org/authors",
+        "https://icc2027.ieee-icc.org/authors/call-symposium-papers",
+        "https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2027"
+      ],
+      "verified": "2026-10-16",
+      "name": "IEEE International Conference on Communications",
+      "organizers": "IEEE ComSoc",
+      "start": "2027-05-30",
+      "end": "2027-06-03",
+      "deadline": "2026-10-16",
+      "deadline_type": "full paper",
+      "deadline_note": "Official site says 16 Oct; ComSoc's page and aggregators say 2 Oct. Notification 15 Jan 2027.",
       "status": "closed"
     },
     {
